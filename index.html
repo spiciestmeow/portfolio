@@ -1,17 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>clydebustamante.com</title>
     <style>
         span {
+            display: flex;
+            justify-content: center;
+            font-size: 120px;
+            font-weight: bold;
+            font-family: Helvetica, Verdana, Arial;
+            text-align: center;
+        }
+
+        /* Large Desktops */
+        @media (max-width: 1200px) {
+            span {
+                font-size: 100px;
                 display: flex;
                 justify-content: center;
-                font-size: 120px;
                 font-weight: bold;
                 font-family: Helvetica, Verdana, Arial;
+            }
         }
+
+        /* Laptops & Small Desktops */
+        @media (max-width: 992px) {
+            span {
+                font-size: 80px;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                font-family: Helvetica, Verdana, Arial;
+            }
+        }
+
+        /* Tablets */
         @media (max-width: 768px) {
             span {
                 font-size: 8vw;
@@ -21,10 +48,34 @@
                 font-family: Helvetica, Verdana, Arial;
             }
         }
+
+        /* Large Phones */
+        @media (max-width: 576px) {
+            span {
+                font-size: 10vw;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                font-family: Helvetica, Verdana, Arial;
+            }
+        }
+
+        /* Small Phones */
         @media (max-width: 480px) {
             span {
-                font-size: 8vw;
-                display: flex;
+                font-size: 12vw;
+                                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                font-family: Helvetica, Verdana, Arial;
+            }
+        }
+
+        /* Extra Small Phones */
+        @media (max-width: 320px) {
+            span {
+                font-size: 14vw;
+                                display: flex;
                 justify-content: center;
                 font-weight: bold;
                 font-family: Helvetica, Verdana, Arial;
