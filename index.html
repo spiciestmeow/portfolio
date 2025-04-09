@@ -1,1 +1,299 @@
-&lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;&quot; /&gt; &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;https://i.ibb.co/3986DcB0/Untitled-2.png&quot; /&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.min.css&quot; /&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;title&gt;ClydeShop - Your One-stop Shop for HOK Global Skins&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;div class=&quot;container&quot;&gt; &lt;div class=&quot;sidebar&quot;&gt; &lt;button class=&quot;mobile-toggle&quot; onclick=&quot;toggleSidebar()&quot;&gt; &lt;img src=&quot;https://i.ibb.co/9mBD0Gjg/clydelogo.png&quot; alt=&quot;ClydeShop&quot; class=&quot;button-logo&quot; /&gt; &lt;/button&gt; &lt;div class=&quot;sidebar-content&quot;&gt; &lt;div class=&quot;sidebar-tabs&quot;&gt; &lt;div class=&quot;sidebar-tab active&quot; data-tab=&quot;team&quot;&gt;Home&lt;/div&gt; &lt;div class=&quot;sidebar-tab&quot; data-tab=&quot;shop&quot;&gt;Price Guide&lt;/div&gt; &lt;!--&lt;div class=&quot;sidebar-tab&quot; data-tab=&quot;reviews&quot;&gt;Reviews&lt;/div&gt;--&gt; &lt;/div&gt; &lt;div class=&quot;sidebar-panel active&quot; id=&quot;team-panel&quot;&gt; &lt;div class=&quot;map-preview&quot;&gt; &lt;div class=&quot;map-subtitle&quot;&gt; via &lt;span class=&quot;gifting-label&quot;&gt; GIFTING&lt;/span&gt; &lt;/div&gt; &lt;div class=&quot;map-title&quot;&gt;CLYDESHOP&lt;/div&gt; &lt;div class=&quot;map-score&quot;&gt; &lt;img src=&quot;https://ugc.production.linktr.ee/7f03b3b1-db44-47c5-9b10-31b01468d2c8_tyhjyt1.png?io=true&amp;size=avatar-v3_0&quot; alt=&quot;ClydeShop Logo&quot; style=&quot;width: 100%; height: auto; display: block&quot; /&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;players-container&quot;&gt; &lt;div class=&quot;player&quot; onclick=&quot;setActivePlayer(this, 'premium')&quot;&gt; &lt;div class=&quot;player-avatar&quot; style=&quot; display: flex; align-items: center; justify-content: center; font-size: 24px; &quot;&gt; 👑 &lt;/div&gt; &lt;div class=&quot;player-info&quot;&gt; &lt;div class=&quot;player-name&quot;&gt;Premium Skins&lt;/div&gt; &lt;div class=&quot;player-role&quot;&gt; LYN2025 &bull; LEGEND &bull; VALENTINE &bull; LIMITED &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;player&quot; onclick=&quot;setActivePlayer(this, 'epic')&quot;&gt; &lt;div class=&quot;player-avatar&quot; style=&quot; display: flex; align-items: center; justify-content: center; font-size: 24px; &quot;&gt; ⚔️ &lt;/div&gt; &lt;div class=&quot;player-info&quot;&gt; &lt;div class=&quot;player-name&quot;&gt;Epic Skins&lt;/div&gt; &lt;div class=&quot;player-role&quot;&gt;EPIC&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;player&quot; onclick=&quot;setActivePlayer(this, 'rare')&quot;&gt; &lt;div class=&quot;player-avatar&quot; style=&quot; display: flex; align-items: center; justify-content: center; font-size: 24px; &quot;&gt; 🥇 &lt;/div&gt; &lt;div class=&quot;player-info&quot;&gt; &lt;div class=&quot;player-name&quot;&gt;Rare &amp; Champion Skins&lt;/div&gt; &lt;div class=&quot;player-role&quot;&gt;RARE &bull; CHAMPION2024&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;player player-active&quot; onclick=&quot;setActivePlayer(this, 'beginner')&quot;&gt; &lt;div class=&quot;player-avatar&quot; style=&quot; display: flex; align-items: center; justify-content: center; font-size: 24px; &quot;&gt; 🛡️ &lt;/div&gt; &lt;div class=&quot;player-info&quot;&gt; &lt;div class=&quot;player-name&quot;&gt;Beginner Skins&lt;/div&gt; &lt;div class=&quot;player-role&quot;&gt;NORMAL&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;sidebar-panel&quot; id=&quot;shop-panel&quot;&gt; &lt;div class=&quot;shop-menu&quot;&gt; &lt;div class=&quot;shop-category&quot; onclick=&quot;toggleCategory(this)&quot;&gt; &lt;div class=&quot;tooltip-container&quot; onclick=&quot;event.stopPropagation(); toggleTooltip('premiumTooltip')&quot;&gt; &lt;button class=&quot;tooltip-btn&quot;&gt;?&lt;/button&gt; &lt;div id=&quot;premiumTooltip&quot; class=&quot;tooltip&quot;&gt; Get Legend, Valentine, KIC2023, and Limited skins for ₱780.00 pesos. Each skin comes with a FREE custom button, and you can choose from a variety of designs: Limited, Lyn2025, Lyn2024, Legend, ShanHai, Mythic, KIC2023, 100star, Magic, Valentine, and Blessed. &lt;/div&gt; &lt;/div&gt; Premium Skins &lt;span&gt;▼&lt;/span&gt; &lt;/div&gt; &lt;div class=&quot;shop-items&quot;&gt; &lt;div class=&quot;shop-item&quot;&gt; &lt;div class=&quot;shop-item-header&quot;&gt; &lt;h3&gt;Lyn2025&lt;/h3&gt; &lt;div class=&quot;shop-item-price&quot;&gt;₱ 780.00&lt;/div&gt; &lt;/div&gt; &lt;p&gt;w/ custom button&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;shop-item&quot;&gt; &lt;div class=&quot;shop-item-header&quot;&gt; &lt;h3&gt;Legend&lt;/h3&gt; &lt;div class=&quot;shop-item-price&quot;&gt;₱ 780.00&lt;/div&gt; &lt;/div&gt; &lt;p&gt;w/ custom button&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;shop-item&quot;&gt; &lt;div class=&quot;shop-item-header&quot;&gt; &lt;h3&gt;Valentine&lt;/h3&gt; &lt;div class=&quot;shop-item-price&quot;&gt;₱ 780.00&lt;/div&gt; &lt;/div&gt; &lt;p&gt;w/ custom button&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;shop-item&quot;&gt; &lt;div class=&quot;shop-item-header&quot;&gt; &lt;h3&gt;Magic&lt;/h3&gt; &lt;div class=&quot;shop-item-price&quot;&gt;₱ 780.00&lt;/div&gt; &lt;/div&gt; &lt;p&gt;w/ custom button&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;shop-item&quot;&gt; &lt;div class=&quot;shop-item-header&quot;&gt; &lt;h3&gt;KIC2023&lt;/h3&gt; &lt;div class=&quot;shop-item-price&quot;&gt;₱ 780.00&lt;/div&gt; &lt;/div&gt; &lt;p&gt;w/ custom button&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;shop-item&quot;&gt; &lt;div class=&quot;shop-item-header&quot;&gt; &lt;h3&gt;Limited&lt;/h3&gt; &lt;div class=&quot;shop-item-price&quot;&gt;₱ 780.00&lt;/div&gt; &lt;/div&gt; &lt;p&gt;w/ custom button&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;shop-category&quot; onclick=&quot;toggleCategory(this)&quot;&gt; &lt;div class=&quot;tooltip-container&quot; onclick=&quot;event.stopPropagation(); toggleTooltip('epicTooltip')&quot;&gt; &lt;button class=&quot;tooltip-btn&quot;&gt;?&lt;/button&gt; &lt;div id=&quot;epicTooltip&quot; class=&quot;tooltip&quot;&gt; The Epic skins and Limited skin for ₱410.00 pesos include a custom button! You can select from options like Epic, Limited, ShanHai, Fox Spirit Matchmaker, and Magic. &lt;/div&gt; &lt;/div&gt; Epic &amp; Tournament Skins &lt;span&gt;▼&lt;/span&gt; &lt;/div&gt; &lt;div class=&quot;shop-items&quot;&gt; &lt;div class=&quot;shop-item&quot;&gt; &lt;div class=&quot;shop-item-header&quot;&gt; &lt;h3&gt;Epic&lt;/h3&gt; &lt;div class=&quot;shop-item-price&quot;&gt;₱ 410.00&lt;/div&gt; &lt;/div&gt; &lt;p&gt;w/ custom button&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;shop-category&quot; onclick=&quot;toggleCategory(this)&quot;&gt; Rare &amp; Champion Skins &lt;span&gt;▼&lt;/span&gt; &lt;/div&gt; &lt;div class=&quot;shop-items&quot;&gt; &lt;div class=&quot;shop-item&quot;&gt; Champion2024 &lt;div class=&quot;shop-item-price&quot;&gt;₱ 225.00&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;shop-item&quot;&gt; Rare &lt;div class=&quot;shop-item-price&quot;&gt;₱ 225.00&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;shop-category&quot; onclick=&quot;toggleCategory(this)&quot;&gt; Standard &amp; Beginner Skins &lt;span&gt;▼&lt;/span&gt; &lt;/div&gt; &lt;div class=&quot;shop-items&quot;&gt; &lt;div class=&quot;shop-item&quot;&gt; Normal &lt;div class=&quot;shop-item-price&quot;&gt;₱ 135.00&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;content&quot;&gt; &lt;div class=&quot;content-header-container&quot;&gt; &lt;div class=&quot;content-header&quot;&gt; &lt;div class=&quot;content-title&quot;&gt;Beginner Hero Skins&lt;/div&gt; &lt;div class=&quot;search-bar&quot;&gt; &lt;div class=&quot;search-icon&quot;&gt;🔍&lt;/div&gt; &lt;input type=&quot;text&quot; id=&quot;hero-search&quot; placeholder=&quot;Search hero skin name...&quot; oninput=&quot;searchHeroes()&quot; /&gt; &lt;/div&gt; &lt;div class=&quot;filter-options&quot;&gt; &lt;div class=&quot;filter-option active&quot; onclick=&quot;setActiveFilter(this, 'all')&quot;&gt; All &lt;/div&gt; &lt;div class=&quot;filter-option&quot; onclick=&quot;setActiveFilter(this, 'popular')&quot;&gt; Popular &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;content-scrollable&quot;&gt; &lt;div class=&quot;character-grid&quot; id=&quot;character-grid&quot;&gt;&lt;/div&gt; &lt;div class=&quot;footer-container&quot;&gt; &lt;div class=&quot;midasbuy-logo&quot;&gt; &lt;img src=&quot;https://i.ibb.co/9mBD0Gjg/clydelogo.png&quot; alt=&quot;Midasbuy&quot; /&gt; &lt;div class=&quot;midasbuy-tagline&quot;&gt; Safe and simple skin purchases through gifting. &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;footer-content&quot;&gt; &lt;div class=&quot;footer-left&quot;&gt; &lt;div class=&quot;social-section&quot;&gt; &lt;div class=&quot;section-title&quot;&gt;Follow us on&lt;/div&gt; &lt;div class=&quot;social-icons&quot;&gt; &lt;a href=&quot;https://web.facebook.com/clybustamante/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt; &lt;div class=&quot;social-icon facebook&quot;&gt; &lt;img src=&quot;https://cdn.midasbuy.com/oversea_web/static/images/footer/footer-fb-new.png&quot; alt=&quot;Facebook&quot; /&gt; &lt;/div&gt; &lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;footer-right&quot;&gt; &lt;div class=&quot;payment-section&quot;&gt; &lt;div class=&quot;section-title&quot;&gt; Clydeshop Supports Payment Channels &lt;/div&gt; &lt;div class=&quot;payment-marquee-container&quot;&gt; &lt;div class=&quot;payment-marquee&quot;&gt; &lt;div class=&quot;payment-icons&quot;&gt; &lt;div class=&quot;payment-icon&quot;&gt; &lt;img src=&quot;https://1000logos.net/wp-content/uploads/2023/05/GCash-Logo.png&quot; alt=&quot;Gcash&quot; /&gt; &lt;/div&gt; &lt;div class=&quot;payment-icon&quot;&gt; &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Maya_logo.svg/2560px-Maya_logo.svg.png&quot; alt=&quot;Maya&quot; /&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;payment-icons&quot;&gt; &lt;div class=&quot;payment-icon&quot;&gt; &lt;img src=&quot;https://1000logos.net/wp-content/uploads/2023/05/GCash-Logo.png&quot; alt=&quot;Gcash&quot; /&gt; &lt;/div&gt; &lt;div class=&quot;payment-icon&quot;&gt; &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Maya_logo.svg/2560px-Maya_logo.svg.png&quot; alt=&quot;Maya&quot; /&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;certification-section&quot;&gt; &lt;img src=&quot;https://ugc.production.linktr.ee/7f03b3b1-db44-47c5-9b10-31b01468d2c8_tyhjyt1.png?io=true&amp;size=avatar-v3_0&quot; alt=&quot;ClydeShop Logo&quot; style=&quot;width: auto; height: 40px; display: block&quot; /&gt; &lt;/div&gt; &lt;div class=&quot;footer-copyright&quot;&gt; &copy; 2025 Clydeshop. All Rights Reserved. &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;assets/data/skins.min.js&quot;&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/3986DcB0/Untitled-2.png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClydeShop - Your One-stop Shop for HOK Global Skins</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button class="mobile-toggle" onclick="toggleSidebar()">
+                <img src="https://i.ibb.co/9mBD0Gjg/clydelogo.png" alt="ClydeShop" class="button-logo" />
+            </button>
+            <div class="sidebar-content">
+                <div class="sidebar-tabs">
+                    <div class="sidebar-tab active" data-tab="team">Home</div>
+                    <div class="sidebar-tab" data-tab="shop">Price Guide</div>
+                    <!--<div class="sidebar-tab" data-tab="reviews">Reviews</div>-->
+                </div>
+
+                <div class="sidebar-panel active" id="team-panel">
+                    <div class="map-preview">
+                        <div class="map-subtitle">
+                            via <span class="gifting-label"> GIFTING</span>
+                        </div>
+                        <div class="map-title">CLYDESHOP</div>
+                        <div class="map-score">
+                            <img src="https://ugc.production.linktr.ee/7f03b3b1-db44-47c5-9b10-31b01468d2c8_tyhjyt1.png?io=true&size=avatar-v3_0"
+                                alt="ClydeShop Logo" style="width: 100%; height: auto; display: block" />
+                        </div>
+                    </div>
+                    <div class="players-container">
+                        <div class="player" onclick="setActivePlayer(this, 'premium')">
+                            <div class="player-avatar" style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                  ">
+                                👑
+                            </div>
+                            <div class="player-info">
+                                <div class="player-name">Premium Skins</div>
+                                <div class="player-role">
+                                    LYN2025 • LEGEND • VALENTINE • LIMITED
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player" onclick="setActivePlayer(this, 'epic')">
+                            <div class="player-avatar" style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                  ">
+                                ⚔️
+                            </div>
+                            <div class="player-info">
+                                <div class="player-name">Epic Skins</div>
+                                <div class="player-role">EPIC</div>
+                            </div>
+                        </div>
+                        <div class="player" onclick="setActivePlayer(this, 'rare')">
+                            <div class="player-avatar" style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                  ">
+                                🥇
+                            </div>
+                            <div class="player-info">
+                                <div class="player-name">Rare & Champion Skins</div>
+                                <div class="player-role">RARE • CHAMPION2024</div>
+                            </div>
+                        </div>
+                        <div class="player player-active" onclick="setActivePlayer(this, 'beginner')">
+                            <div class="player-avatar" style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                  ">
+                                🛡️
+                            </div>
+                            <div class="player-info">
+                                <div class="player-name">Beginner Skins</div>
+                                <div class="player-role">NORMAL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-panel" id="shop-panel">
+                    <div class="shop-menu">
+                        <div class="shop-category" onclick="toggleCategory(this)">
+                            <div class="tooltip-container"
+                                onclick="event.stopPropagation(); toggleTooltip('premiumTooltip')">
+                                <button class="tooltip-btn">?</button>
+                                <div id="premiumTooltip" class="tooltip">
+                                    Get Legend, Valentine, KIC2023, and Limited skins for
+                                    ₱780.00 pesos. Each skin comes with a FREE custom button,
+                                    and you can choose from a variety of designs: Limited,
+                                    Lyn2025, Lyn2024, Legend, ShanHai, Mythic, KIC2023, 100star,
+                                    Magic, Valentine, and Blessed.
+                                </div>
+                            </div>
+                            Premium Skins
+                            <span>▼</span>
+                        </div>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <div class="shop-item-header">
+                                    <h3>Lyn2025</h3>
+                                    <div class="shop-item-price">₱ 780.00</div>
+                                </div>
+                                <p>w/ custom button</p>
+                            </div>
+                            <div class="shop-item">
+                                <div class="shop-item-header">
+                                    <h3>Legend</h3>
+                                    <div class="shop-item-price">₱ 780.00</div>
+                                </div>
+                                <p>w/ custom button</p>
+                            </div>
+                            <div class="shop-item">
+                                <div class="shop-item-header">
+                                    <h3>Valentine</h3>
+                                    <div class="shop-item-price">₱ 780.00</div>
+                                </div>
+                                <p>w/ custom button</p>
+                            </div>
+                            <div class="shop-item">
+                                <div class="shop-item-header">
+                                    <h3>Magic</h3>
+                                    <div class="shop-item-price">₱ 780.00</div>
+                                </div>
+                                <p>w/ custom button</p>
+                            </div>
+                            <div class="shop-item">
+                                <div class="shop-item-header">
+                                    <h3>KIC2023</h3>
+                                    <div class="shop-item-price">₱ 780.00</div>
+                                </div>
+                                <p>w/ custom button</p>
+                            </div>
+                            <div class="shop-item">
+                                <div class="shop-item-header">
+                                    <h3>Limited</h3>
+                                    <div class="shop-item-price">₱ 780.00</div>
+                                </div>
+                                <p>w/ custom button</p>
+                            </div>
+                        </div>
+                        <div class="shop-category" onclick="toggleCategory(this)">
+                            <div class="tooltip-container"
+                                onclick="event.stopPropagation(); toggleTooltip('epicTooltip')">
+                                <button class="tooltip-btn">?</button>
+                                <div id="epicTooltip" class="tooltip">
+                                    The Epic skins and Limited skin for ₱410.00 pesos include a
+                                    custom button! You can select from options like Epic,
+                                    Limited, ShanHai, Fox Spirit Matchmaker, and Magic.
+                                </div>
+                            </div>
+                            Epic & Tournament Skins
+                            <span>▼</span>
+                        </div>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                <div class="shop-item-header">
+                                    <h3>Epic</h3>
+                                    <div class="shop-item-price">₱ 410.00</div>
+                                </div>
+                                <p>w/ custom button</p>
+                            </div>
+                        </div>
+                        <div class="shop-category" onclick="toggleCategory(this)">
+                            Rare & Champion Skins <span>▼</span>
+                        </div>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                Champion2024
+                                <div class="shop-item-price">₱ 225.00</div>
+                            </div>
+                            <div class="shop-item">
+                                Rare
+                                <div class="shop-item-price">₱ 225.00</div>
+                            </div>
+                        </div>
+                        <div class="shop-category" onclick="toggleCategory(this)">
+                            Standard & Beginner Skins <span>▼</span>
+                        </div>
+                        <div class="shop-items">
+                            <div class="shop-item">
+                                Normal
+                                <div class="shop-item-price">₱ 135.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-header-container">
+                <div class="content-header">
+                    <div class="content-title">Beginner Hero Skins</div>
+                    <div class="search-bar">
+                        <div class="search-icon">🔍</div>
+                        <input type="text" id="hero-search" placeholder="Search hero skin name..."
+                            oninput="searchHeroes()" />
+                    </div>
+                    <div class="filter-options">
+                        <div class="filter-option active" onclick="setActiveFilter(this, 'all')">
+                            All
+                        </div>
+                        <div class="filter-option" onclick="setActiveFilter(this, 'popular')">
+                            Popular
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-scrollable">
+                <div class="character-grid" id="character-grid"></div>
+                <div class="footer-container">
+                    <div class="midasbuy-logo">
+                        <img src="https://i.ibb.co/9mBD0Gjg/clydelogo.png" alt="Midasbuy" />
+                        <div class="midasbuy-tagline">
+                            Safe and simple skin purchases through gifting.
+                        </div>
+                    </div>
+
+                    <div class="footer-content">
+                        <div class="footer-left">
+                            <div class="social-section">
+                                <div class="section-title">Follow us on</div>
+                                <div class="social-icons">
+                                    <a href="https://web.facebook.com/clybustamante/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <div class="social-icon facebook">
+                                            <img src="https://cdn.midasbuy.com/oversea_web/static/images/footer/footer-fb-new.png"
+                                                alt="Facebook" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-right">
+                            <div class="payment-section">
+                                <div class="section-title">
+                                    Clydeshop Supports Payment Channels
+                                </div>
+                                <div class="payment-marquee-container">
+                                    <div class="payment-marquee">
+                                        <div class="payment-icons">
+                                            <div class="payment-icon">
+                                                <img src="https://1000logos.net/wp-content/uploads/2023/05/GCash-Logo.png"
+                                                    alt="Gcash" />
+                                            </div>
+                                            <div class="payment-icon">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Maya_logo.svg/2560px-Maya_logo.svg.png"
+                                                    alt="Maya" />
+                                            </div>
+                                        </div>
+                                        <div class="payment-icons">
+                                            <div class="payment-icon">
+                                                <img src="https://1000logos.net/wp-content/uploads/2023/05/GCash-Logo.png"
+                                                    alt="Gcash" />
+                                            </div>
+                                            <div class="payment-icon">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Maya_logo.svg/2560px-Maya_logo.svg.png"
+                                                    alt="Maya" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification-section">
+                        <img src="https://ugc.production.linktr.ee/7f03b3b1-db44-47c5-9b10-31b01468d2c8_tyhjyt1.png?io=true&size=avatar-v3_0"
+                            alt="ClydeShop Logo" style="width: auto; height: 40px; display: block" />
+                    </div>
+                    <div class="footer-copyright">
+                        © 2025 Clydeshop. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="assets/data/skins.min.js"></script>
+ </body>
+</html>
