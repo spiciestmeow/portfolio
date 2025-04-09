@@ -2911,7 +2911,7 @@
         const isVisible = tooltip.style.display === "block";
         document
           .querySelectorAll(".tooltip")
-          .forEach((el) => (el.style.display = "none")); // close others
+          .forEach((el) => (el.style.display = "none"));
         tooltip.style.display = isVisible ? "none" : "block";
       }
     </script>
