@@ -24,10 +24,7 @@ const airdropData = {
       name: "Honor of Kings",
       icon: "🎮",
       iconClass: "layerzero-icon",
-      status: "GAME",
-    },
-  ],
-};
+      status: "ACTIVE"};
 
 function createParticles() {
   const particlesContainer = document.getElementById("particles");
