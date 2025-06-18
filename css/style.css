@@ -234,7 +234,6 @@ body {
   width: 100%;
 }
 
-/* Default grid for screens wider than 358px */
 @media (min-width: 379px) {
   .airdrop-grid {
     display: grid;
@@ -244,7 +243,6 @@ body {
   }
 }
 
-/* Single column for screens 358px and below */
 @media (max-width: 378px) {
   .container {
     padding: 5px;
