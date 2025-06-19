@@ -1,8 +1,17 @@
 @font-face {
   font-family: "MyCustomFont";
   src: url("gibson-regular.otf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
+
+.airdrop-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,9 +108,9 @@ body {
 }
 
 .section-title {
-  font-size: 22px;
+  font-size: 29px;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -116,23 +125,28 @@ body {
 .exchanges-list {
   margin-bottom: 40px;
 }
-
 .exchange-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   background: rgba(40, 40, 40, 0.8);
   border-radius: 12px;
   padding: 15px;
   margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
   transition: all 0.3s ease;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .exchange-item:hover {
-  background: rgba(50, 50, 50, 0.9);
-  transform: translateX(5px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(125, 211, 33, 0.3);
+  border-color: rgba(125, 211, 33, 0.5);
+  background: linear-gradient(
+    135deg,
+    rgba(55, 65, 55, 0.95),
+    rgba(45, 55, 45, 0.9)
+  );
 }
 
 .exchange-icon {
@@ -227,10 +241,20 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   padding: 12px;
+  padding-right: 40px;
   color: white;
   margin-bottom: 20px;
   cursor: pointer;
   width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
 }
 
 @media (min-width: 379px) {
