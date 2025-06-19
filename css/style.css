@@ -122,9 +122,27 @@ body {
   text-align: center;
 }
 
+.exchange-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .exchanges-list {
   margin-bottom: 40px;
 }
+
+.exchange-item img,
+.exchange-item .exchange-name {
+  position: relative;
+  z-index: 1;
+}
+
 .exchange-item {
   display: flex;
   align-items: center;
@@ -136,6 +154,11 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.exchange-item {
+  position: relative;
+  overflow: hidden;
 }
 
 .exchange-item:hover {
