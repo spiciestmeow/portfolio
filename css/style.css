@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MyCustomFont";
-  src: url("gibson-regular.otf") format("truetype");
+  src: url("../gibson-regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -85,7 +85,7 @@ body {
 
 .profile-title {
   color: #ffff;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
