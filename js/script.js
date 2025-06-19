@@ -2,19 +2,19 @@ const airdropData = {
   featured: [
     {
       name: "MANHWA",
-      icon: "M",
+      icon: "https://i.pinimg.com/736x/ae/d9/aa/aed9aa39285a2dfe5cceed3574a47a78.jpg",
       iconClass: "pharos-icon",
       status: "ACTIVE",
     },
     {
       name: "MANHUA",
-      icon: "M",
+      icon: "https://avatarfiles.alphacoders.com/366/thumb-350-366997.webp",
       iconClass: "chakra-icon",
       status: "ACTIVE",
     },
     {
       name: "MANGA",
-      icon: "M",
+      icon: "https://cdn-uploads.gameblog.fr/img/news/694552_681df8791ccb8.webp",
       iconClass: "gradient-icon",
       status: "ACTIVE",
     },
@@ -22,9 +22,12 @@ const airdropData = {
   gaming: [
     {
       name: "Honor of Kings",
-      icon: "🎮",
+      icon: "https://admin.esports.gg/wp-content/uploads/2024/06/channels4_profile.jpg",
       iconClass: "layerzero-icon",
-      status: "GAME"};
+      status: "ACTIVE",
+    },
+  ],
+};
 
 function createParticles() {
   const particlesContainer = document.getElementById("particles");
@@ -43,9 +46,11 @@ function createAirdropItem(data, index) {
   item.className = "airdrop-item slide-in";
   item.style.animationDelay = index * 0.1 + "s";
   item.innerHTML = `
-      <div class="airdrop-icon ${data.iconClass}">${data.icon}</div>
-      <span class="airdrop-name">${data.name}</span>
-      <div class="active-label">${data.status}</div>
+       <div class="airdrop-icon ${data.iconClass}">
+      <img src="${data.icon}" alt="${data.name}" class="airdrop-icon-img" />
+    </div>
+    <span class="airdrop-name">${data.name}</span>
+    <div class="active-label">${data.status}</div>
     `;
   return item;
 }
