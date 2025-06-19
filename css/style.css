@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MyCustomFont";
-  src: url("gibson-regular.otf") format("opentype");
+  src: url("gibson-regular.otf") format("truetype");
   font-style: normal;
 }
 * {
