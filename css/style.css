@@ -77,18 +77,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
- background: linear-gradient(270deg, green, #556B2F, green);
-      background-size: 600% 600%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: gradientShift 5s ease infinite;
 }
 
-  @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
 .rocket {
   color: #00ff00;
   font-size: 24px;
