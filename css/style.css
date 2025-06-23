@@ -452,7 +452,7 @@ body {
     rgba(35, 45, 35, 0.8)
   );
   border-radius: 16px;
-  padding: 20px 15px;
+  padding: 12px 12px;
   display: flex;
   align-items: center;
   gap: 12px;
