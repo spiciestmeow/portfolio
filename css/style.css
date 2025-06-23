@@ -43,6 +43,7 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  
 }
 
 .profile-image img#avatar {
@@ -76,7 +77,17 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+    animation: colorPulse 2s infinite alternate;
 }
+
+  @keyframes colorPulse {
+      0% {
+        color: green;
+      }
+      100% {
+        color: #556B2F; /* dark yellow green */
+      }
+    }
 
 .rocket {
   color: #00ff00;
