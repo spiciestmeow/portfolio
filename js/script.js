@@ -1,19 +1,19 @@
 const airdropData = {
   featured: [
     {
-      name: "MANHWA",
+      name: "Manhwa",
       icon: "https://i.pinimg.com/736x/ae/d9/aa/aed9aa39285a2dfe5cceed3574a47a78.jpg",
       iconClass: "pharos-icon",
       status: "ACTIVE",
     },
     {
-      name: "MANHUA",
+      name: "Manhua",
       icon: "https://avatarfiles.alphacoders.com/366/thumb-350-366997.webp",
       iconClass: "chakra-icon",
       status: "ACTIVE",
     },
     {
-      name: "MANGA",
+      name: "Manga",
       icon: "https://cdn-uploads.gameblog.fr/img/news/694552_681df8791ccb8.webp",
       iconClass: "gradient-icon",
       status: "ACTIVE",
